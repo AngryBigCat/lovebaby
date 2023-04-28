@@ -9,11 +9,11 @@ on:
     - cron: 5 * * * *
 
 jobs:
-  GLaDOS-checkin:
+  lovebaby:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v3
 
       - name: lovebaby
         run: |
