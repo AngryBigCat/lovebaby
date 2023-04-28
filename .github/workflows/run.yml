@@ -1,0 +1,20 @@
+name: lovebaby
+
+on:
+  push:
+  pull_request:
+  watch:
+    types: [ started ]
+  schedule:
+    - cron: */1 * * * *
+
+jobs:
+  GLaDOS-checkin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: main
+
+      - name: lovebaby
+        run: |
+          ./run.sh
