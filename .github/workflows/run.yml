@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: install jq
-        run: apt install -y jq 
+        run: sudo apt install -y jq 
       - name: Add execute permission to run.sh
         run: chmod +x ./run.sh
       - name: Run script
