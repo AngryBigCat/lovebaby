@@ -1,4 +1,4 @@
-TEXT=$(curl "https://api.vvhan.com/api/love?type=json")
+TEXT=$(curl --location --request GET "https://api.vvhan.com/api/love?type=json" --header 'User-Agent: Apifox/1.0.0 (https://www.apifox.cn)' )
 
 echo $TEXT
 
