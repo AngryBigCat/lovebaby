@@ -1,4 +1,4 @@
-text=$(curl https://api.vvhan.com/api/love\?type\=json | jq -r ".ishan")
+text=$(curl "https://api.vvhan.com/api/love\?type\=json"|jq -r ".ishan")
 
 echo $text
 
